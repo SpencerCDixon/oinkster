@@ -2,6 +2,10 @@
 // jsdom for DOM APIs, lifecycle methods, use of mount()
 require('../../dom')('<html><body></body></html>');
 
+// Most of this setup code belongs in a test-setup file that will get run before
+// your suit runs.  That way you can set some globals used throughout tests and
+// not have to worry about doing a ton of imports. See here:
+// https://github.com/SpencerCDixon/imagery-frontend/blob/master/tests/test-bundler.js
 import React from 'react'
 import { Provider } from 'react-redux';
 import chai from 'chai'

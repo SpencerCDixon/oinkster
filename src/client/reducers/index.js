@@ -1,20 +1,19 @@
-
 import { combineReducers } from 'redux'
-import { routerReducer } from 'react-router-redux'
+import { routerReducer } from 'react-router-redux' // <-- Not being used. Set up linting
 
-import boardReducer from './board-reducer'
-import authReducer from './auth-reducer'
-import feedbackReducer from './feedback-reducer'
-import profileReducer from './profile-reducer'
-import settingsReducer from './settings-reducer'
+import board from './board-reducer'
+import auth from './auth-reducer'
+import feedback from './feedback-reducer'
+import profile from './profile-reducer'
+import settings from './settings-reducer'
 
 const rootReducer = combineReducers({
-  auth: authReducer,
-  board: boardReducer,
-  routing: routerReducer,
-  feedback: feedbackReducer,
-  profile: profileReducer,
-  settings: settingsReducer
+  auth,
+  board,
+  routing,
+  feedback,
+  profile,
+  settings,
 })
 
 
